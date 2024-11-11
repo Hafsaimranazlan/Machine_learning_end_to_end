@@ -1,0 +1,9 @@
+artifacts_root : artifacts
+
+
+data_ingestion:
+  root_dir : data/raw
+  data_url : https://github.com/Hafsaimranazlan/test/raw/refs/heads/main/wineQ.zip
+  local_data_file: data/raw/wineQ.zip
+  unzip_dir: data/raw
+
