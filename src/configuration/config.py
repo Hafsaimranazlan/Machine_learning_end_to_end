@@ -1,6 +1,6 @@
 from src.constant import *
 from src.utils.common import read_yaml
-from src.entity.config_entity import DataIngestionConfig
+from src.entity.config_entity import DataIngestionConfig,DataValidationConfig
 
 class ConfigurationManager:
     def __init__(self,
@@ -22,5 +22,18 @@ class ConfigurationManager:
             unzip_dir=config.unzip_dir 
             )
         return data_ingestion_config
+    
+
+    def data_val_config(self)->DataValidationConfig:
+        config=self.config.data_validation
+        #schema=self.schema.COLUMNS
+
+        data_val_config=DataValidationConfig(
+            root_dir=config.root_dir,
+            unzip_data_path=config.unzip_data_path,
+            STATUS_FILE=config.STATUS_FILE,
+            all_schema=self.schema.COLUMNS
+        )
+        return data_val_config 
     
 

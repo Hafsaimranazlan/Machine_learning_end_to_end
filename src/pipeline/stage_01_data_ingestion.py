@@ -2,7 +2,7 @@ from src.configuration.config import ConfigurationManager
 from src.components.data_ingestion import DataIngestion
 from src import logger
 
-STAGE_NAME="Data Ingestion Stage"
+
 
 class DataIngestionTrainingPipeline:
     def __init__(self):
@@ -17,7 +17,4 @@ class DataIngestionTrainingPipeline:
 
 
 if __name__=="__main__":
-    logger.info(f">>>>>>>>>> stage {STAGE_NAME} started >>>>>>>>>>")
-    obj=DataIngestionTrainingPipeline()
-    obj.main()
-    logger.info(f">>>>>>>>>>> completed {STAGE_NAME} >>>>>>>>>>")
+    pass

@@ -7,3 +7,11 @@ data_ingestion:
   local_data_file: data/raw/wineQ.zip
   unzip_dir: data/raw
 
+
+
+data_validation:
+  root_dir : data/data_validation
+  unzip_data_path : data/raw/WineQ.csv
+  STATUS_FILE : data/data_validation/status.txt
+
+
