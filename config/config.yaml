@@ -15,3 +15,8 @@ data_validation:
   STATUS_FILE : data/data_validation/status.txt
 
 
+data_transformation:
+  root_dir: data/processed
+  data_path : data/raw/wineQ.csv
+  pkl_path: data/processed/prepro.pkl
+

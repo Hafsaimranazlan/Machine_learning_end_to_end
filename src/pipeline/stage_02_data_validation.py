@@ -12,7 +12,5 @@ class DataValidationPipeline:
         val2=Data_Validation(data_val)
         val2.validate_all_columns()
 
-
-
-if __name__ == "__main__":
+if __name__=="__main__":
     pass

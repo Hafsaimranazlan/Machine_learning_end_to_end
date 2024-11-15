@@ -1,13 +1,11 @@
 from src.configuration.config import ConfigurationManager
 from src.components.data_ingestion import DataIngestion
+from src.entity.config_entity import DataIngestionConfig
 from src import logger
-
-
 
 class DataIngestionTrainingPipeline:
     def __init__(self):
         pass
-
     def main(self):
         obj=ConfigurationManager()
         data_config=obj.data_ingestion_config()
@@ -18,3 +16,5 @@ class DataIngestionTrainingPipeline:
 
 if __name__=="__main__":
     pass
+
+

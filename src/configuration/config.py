@@ -1,6 +1,6 @@
 from src.constant import *
 from src.utils.common import read_yaml
-from src.entity.config_entity import DataIngestionConfig,DataValidationConfig
+from src.entity.config_entity import DataIngestionConfig,DataValidationConfig,DataTransformationConfig
 
 class ConfigurationManager:
     def __init__(self,
@@ -35,5 +35,15 @@ class ConfigurationManager:
             all_schema=self.schema.COLUMNS
         )
         return data_val_config 
+    
+    def data_transformation_config(self)->DataTransformationConfig:
+        config=self.config.data_transformation
+        data_transformation_config=DataTransformationConfig(
+        root_dir=config.root_dir,
+        data_path=config.data_path,
+        pkl_path=config.pkl_path
+        )
+
+        return data_transformation_config
     
 

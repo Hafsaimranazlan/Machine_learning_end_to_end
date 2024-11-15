@@ -14,3 +14,10 @@ class DataValidationConfig:
     unzip_data_path:Path
     STATUS_FILE:bool
     all_schema:dict
+
+
+@dataclass
+class DataTransformationConfig:
+    root_dir:Path
+    data_path:Path
+    pkl_path:Path

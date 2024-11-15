@@ -3,7 +3,7 @@ from urllib import request
 import zipfile
 from src import logger
 from src.entity.config_entity import DataIngestionConfig
-from src.configuration.config import ConfigurationManager
+
 
 class DataIngestion:
     def __init__(self,config:DataIngestionConfig):
@@ -19,5 +19,3 @@ class DataIngestion:
         with zipfile.ZipFile(self.config.local_data_file,"r") as f:
             f.extractall(unzip_path)
 
-
-                        
