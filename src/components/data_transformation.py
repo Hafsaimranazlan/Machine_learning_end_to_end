@@ -68,6 +68,10 @@ class DataTransformation:
 
         train_arr=np.c_[train_trans,np.array(target_train)]
         test_arr=np.c_[test_trans,np.array(target_test)]
+
+        #train_arr.to_csv(os.path.join(self.config.root_dir,"train_arr.csv"))
+        #test_arr.to_csv(os.path.join(self.config.root_dir,'test_arr.csv'))
+
         logger.info("save preprocessor object")
         path=Path(self.config.pkl_path)
         save_bin(preproc_obj,path)

@@ -21,3 +21,12 @@ class DataTransformationConfig:
     root_dir:Path
     data_path:Path
     pkl_path:Path
+
+
+@dataclass
+class ModelTrainerConfig:
+    pkl_obj_path:Path
+    model_path:Path
+    alpha:float
+    l1_ratio:float
+    TARGET_COLUMN:str

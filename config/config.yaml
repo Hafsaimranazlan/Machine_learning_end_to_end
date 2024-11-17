@@ -18,5 +18,11 @@ data_validation:
 data_transformation:
   root_dir: data/processed
   data_path : data/raw/wineQ.csv
-  pkl_path: data/processed/prepro.pkl
+  pkl_path: data/processed/prepro.joblib
+
+
+model_trainer:
+  pkl_obj_path: data/processed/prepro.joblib
+  model_path: models/model.joblib
+  
 

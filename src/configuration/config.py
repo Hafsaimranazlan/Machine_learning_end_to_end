@@ -1,6 +1,6 @@
 from src.constant import *
 from src.utils.common import read_yaml
-from src.entity.config_entity import DataIngestionConfig,DataValidationConfig,DataTransformationConfig
+from src.entity.config_entity import DataIngestionConfig,DataValidationConfig,DataTransformationConfig,ModelTrainerConfig
 
 class ConfigurationManager:
     def __init__(self,
@@ -45,5 +45,21 @@ class ConfigurationManager:
         )
 
         return data_transformation_config
+    
+
+    def model_trainer_config(self):
+        config=self.config.model_trainer
+        schema=self.schema.TARGET_COLUMN
+        params=self.params.ElasticNet
+
+        model_trainer_config=ModelTrainerConfig(
+            pkl_obj_path=config.pkl_obj_path,
+            model_path=config.model_path,
+            alpha=params.alpha,
+            l1_ratio=params.l1_ratio,
+            TARGET_COLUMN=schema.name
+
+        )
+        return model_trainer_config
     
 

@@ -16,3 +16,5 @@ class DataTransformationTrainingPipeline:
             train_arr,test_arr=obj.train_test_split()
             return train_arr,test_arr
         
+if __name__=="__main__":
+    pass
