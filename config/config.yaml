@@ -24,5 +24,9 @@ data_transformation:
 model_trainer:
   pkl_obj_path: data/processed/prepro.joblib
   model_path: models/model.joblib
+  metric_file_name: data/model_evaluation/metrics.json
+
+
+  
   
 

@@ -57,7 +57,8 @@ class ConfigurationManager:
             model_path=config.model_path,
             alpha=params.alpha,
             l1_ratio=params.l1_ratio,
-            TARGET_COLUMN=schema.name
+            TARGET_COLUMN=schema.name,
+            metric_file_name=config.metric_file_name
 
         )
         return model_trainer_config

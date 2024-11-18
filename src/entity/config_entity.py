@@ -30,3 +30,4 @@ class ModelTrainerConfig:
     alpha:float
     l1_ratio:float
     TARGET_COLUMN:str
+    metric_file_name:Path

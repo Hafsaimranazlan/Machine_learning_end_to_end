@@ -53,7 +53,7 @@ def save_bin(data,path:Path):
 
 @ensure_annotations
 def load_bin(path:Path):
-    data=joblib.dump(path)
+    data=joblib.load(path)
     logger.info(f"binary file loaded from : {path}")
     return data
 
