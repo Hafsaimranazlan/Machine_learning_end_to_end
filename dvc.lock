@@ -9,7 +9,7 @@ stages:
       size: 667
     - path: ./params.yaml
       hash: md5
-      md5: 1e9f04d54c0aa36ad0676995850b8ad3
+      md5: 535a04ca8048ddf8a5199502567d40bc
       size: 42
     - path: ./schema.yaml
       hash: md5
@@ -54,9 +54,9 @@ stages:
       size: 61290
     - path: data/model_evaluation/metrics.json
       hash: md5
-      md5: 7f9554227c8ae45cb4af2ad4b685f414
-      size: 61
+      md5: 89ed197c535aa2848513c3362693ae50
+      size: 60
     - path: models/model.joblib
       hash: md5
-      md5: 127b4fb7e18c51db00d3d97e97248e6d
+      md5: 639426fc3597db65c76638efa7be5545
       size: 719
