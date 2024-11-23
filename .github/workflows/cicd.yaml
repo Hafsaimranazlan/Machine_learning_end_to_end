@@ -15,7 +15,7 @@ jobs:
               with:
                 python-version : '3.8'
 
-            - uses: iteratie/setup-cml@v2
+            - uses: iterative/setup-cml@v1
 
             - name: install Dependencies
               run : |
