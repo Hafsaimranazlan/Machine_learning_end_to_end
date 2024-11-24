@@ -33,3 +33,7 @@ jobs:
             - name: Data Transformation
               run: |
                 python ./src/pipeline/stage_03_data_transformation.py
+
+            - name: Model Trainer
+              run: |
+                python ./src/pipeline/stage_04_Model_trainer.py
