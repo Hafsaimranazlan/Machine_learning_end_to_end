@@ -29,3 +29,7 @@ jobs:
             - name: Run Data Validation
               run: |
                 python ./src/pipeline/stage_02_data_validation.py
+
+            - name: Data Transformation
+              run: |
+                python ./src/pipeline/stage_03_data_transformation.py
